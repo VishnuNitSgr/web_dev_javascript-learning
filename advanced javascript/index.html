@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <!-- <h1>Inline Event</h1> -->
+    <!-- <button style=background-color:yellow; onclick="alert('hello bachho')">greeting</button>
+    <button ondblclick="alert('dobara se aapka sbka hardik subhkamnaye')">greeting again</button>
+    <input type="submit" onmouseover="style.color='red' " onmouseout="style.color='black' "> -->
+    <h1>Internal Event</h1>
+    <button style=background-color:yellow; >greeting</button>
+    <button id="mybtn1">greeting again</button>
+    <input type="submit"id="mybtn12" >
+<!-- 
+    <h1>Internal Event</h1> -->
+    <script>
+       
+    //   document.getElementById('mybtn1').onclick=()=>{
+    //     alert('hello bachho');
+    //   };
+    document.getElementById("mybtn1").onclick=()=>{
+        console.log("hello");
+    }
+    document.getElementById("mybtn1").addEventListener('click',()=>{
+         alert("madarchod");
+    });
+    document.getElementById("mybtn12").addEventListener("mouseover",()=>{
+         alert("bhnchod");
+    });
+    </script>
+</body>
+</html>

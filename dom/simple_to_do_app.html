@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Simple to do app</h1>
+        <input type="text" id="inputfield">
+        <button class="btn"> click me</button>
+        <div class="todolist"></div>
+    </div>
+    <script>
+        let inputElem=document.getElementById('inputfield');
+        console.log(inputElem);
+        let clickbtn=document.querySelector(".btn");
+        console.log(clickbtn);
+        for (let i=0;i<10;i++){
+
+            const addTodo=()=>{
+            console.log(inputElem.value);
+            
+            let pElem=document.createElement("p");
+            pElem.textContent="i"+inputElem.value;
+            console.log(pElem);
+            let todoElem=document.querySelector(".todolist");
+            todoElem.appendChild(pElem);
+            ;  
+        }
+        
+    }
+        
+        clickbtn.addEventListener('click',()=>{
+            addTodo();
+
+        }); 
+       
+    </script>
+</body>
+</html>

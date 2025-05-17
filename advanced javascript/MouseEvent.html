@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black;">
+   <section>
+    <div class="rectangle"></div>
+    <div id="myButton">Click ME</div>
+   </section>
+
+   <script>
+    let myBtn=document.getElementById("myButton");
+    let rectDiv=document.querySelector(".rectangle");
+
+    const handleMouseEvents=()=>{
+        console.log("clicked");
+        rectDiv.style.backgroundColor="red";
+    }
+
+    myBtn.addEventListener("click",()=>{
+       handleMouseEvents();
+    });
+   </script>
+</body>
+</html>
