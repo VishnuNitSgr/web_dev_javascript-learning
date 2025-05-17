@@ -39,3 +39,8 @@
 // const mySymbol=Symbol("mySymbol");
 // console.log(mySymbol);
 // console.log(typeof mySymbol);
+
+//nullish operator
+// let favNo=1;
+// let userFavNo=favNo ?? 99;
+// console.log(userFavNo);
