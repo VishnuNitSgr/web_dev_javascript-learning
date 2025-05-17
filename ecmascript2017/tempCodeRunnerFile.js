@@ -1,0 +1,1 @@
+console.log(person.adress?.address?.street);

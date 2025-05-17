@@ -44,3 +44,8 @@
 // let favNo=1;
 // let userFavNo=favNo ?? 99;
 // console.log(userFavNo);
+
+//optional chaining(?.)
+// const person={name:"vishnu",age:28,};
+// console.log(person.name?.name);
+// console.log(person.adress?.address?.street);
